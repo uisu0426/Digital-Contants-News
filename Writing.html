@@ -23,33 +23,39 @@
 
         /* 기사 내용 양옆 여백 지정*/
         .contents_margin {
-            padding-left: 21%;
-            /* 왼쪽 여백을 7%로 설정 */
-            padding-right: 21%;
-            /* 오른쪽 여백을 7%로 설정 */
+            padding-left: 14%;
+            /* 왼쪽 여백을 14%로 설정 */
+            padding-right: 14%;
+            /* 오른쪽 여백을 14%로 설정 */
+        }
+
+        .contents_annotation {
+            opacity: 0.8;
+            /* 텍스트를 80% 투명하게 설정 */
         }
     </style>
 </head>
 
 <body>
-    <div class="modal-body text-left">
-        <!-- text-center 클래스를 추가하여 이미지와 텍스트를 가운데 정렬합니다. -->
-        <div class="d-flex justify-content-center">
-            <!-- 이미지를 가로로 중앙에 배치하는 부모 div를 추가합니다. -->
-            <img src="Writing_an_ article.png" style="max-width: 86%; height: auto;" />
+    <div class="contents_margin">
+        <p>
+            기사 작성 중입니다.
+        </p>
+
+        <div class="container">
+            <img src="Writing_an_ article.png" style="max-width: 100%; height: auto;" />
         </div>
-        <div class="contents_margin">
-            <strong class="tit-cap">타자기를 치는 손</strong>
-            <p class="txt-desc">(@film_tree_) 홍의수 기자 = 타자기 위에 사람이 올라가있는 사진, 오른쪽에는
-                필름카메라가 있다.<br>
-                2023.09.08 uisu0426@naver.com
-            </p>
-        </div>
-        <div class="contents_margin">
-            <p>
-                기사 작성 중입니다.
-            </p>
-        </div>
+
+        <p class="contents_annotation">
+            ▲ 타자기 위에 사람이 올라가있는 사진, 오른쪽에는 필름카메라가 있다.<br>
+            사진 홍의수
+        </p>
+        <br>
+        <strong>기사 작성 중입니다.</strong>
+        <br>
+        <p>
+            기사 작성 중입니다.
+        </p>
     </div>
 </body>
 
