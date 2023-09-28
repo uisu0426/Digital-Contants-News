@@ -35,9 +35,9 @@
             /* 오른쪽 여백을 10%로 설정 */
         }
 
+        /* 텍스트 불투명도 */
         .contents_annotation {
             opacity: 0.8;
-            /* 텍스트를 80% 투명하게 설정 */
         }
 
         /* 텍스트 글꼴 기울이기*/
@@ -65,37 +65,6 @@
             background-color: #007bff;
             /* 게이지 바 색상 설정 */
         }
-
-        /* 위로 올라가기 버튼 컨테이너 스타일 */
-        #scroll-to-top-container {
-            position: fixed;
-            bottom: 20px;
-            /* 원하는 위치로 조정 가능 */
-            right: 20px;
-            /* 원하는 위치로 조정 가능 */
-            z-index: 9999;
-            /* 다른 요소 위에 나타나도록 함 */
-        }
-
-        /* 버튼 스타일 */
-        #scroll-to-top-button {
-            background-color: #007bff;
-            /* 버튼 배경색 지정 */
-            color: #fff;
-            /* 텍스트 색상 지정 */
-            border: none;
-            padding: 10px 15px;
-            cursor: pointer;
-            border-radius: 4px;
-            opacity: 0.8;
-        }
-
-        /* 버튼 호버(마우스 오버) 스타일 */
-        #scroll-to-top-button:hover {
-            background-color: #0056b3;
-            /* 호버 시 배경색 변경 */
-            opacity: 1;
-        }
     </style>
 </head>
 
@@ -105,17 +74,6 @@
     <div id="scroll-progress-container">
         <!-- 게이지 바 -->
         <div id="scroll-progress"></div>
-    </div>
-
-    <!-- 본문 내용 (긴 내용을 넣어 스크롤 가능하도록 해야합니다) -->
-    <div id="content">
-        <!-- 본문 내용을 이곳에 입력하세요. -->
-    </div>
-
-    <!-- 버튼을 감싸는 div -->
-    <div id="scroll-to-top-container">
-        <!-- 실제 버튼 -->
-        <button id="scroll-to-top-button">Top</button>
     </div>
 
     <div class="contents_margin">
@@ -251,29 +209,6 @@
 
     <!-- JavaScript 파일 연결 -->
     <script>
-
-        // 버튼 요소 가져오기
-        const scrollToTopButton = document.getElementById('scroll-to-top-button');
-
-        // 맨 위로 스크롤하는 함수
-        function scrollToTop() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth' // 부드러운 스크롤 효과 적용
-            });
-        }
-
-        // 스크롤 이벤트를 감지하여 버튼 표시/숨기기
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 200) {
-                scrollToTopButton.style.display = 'block';
-            } else {
-                scrollToTopButton.style.display = 'none';
-            }
-        });
-
-        // 버튼 클릭 시 맨 위로 스크롤
-        scrollToTopButton.addEventListener('click', scrollToTop);
 
         // 게이지 바 요소 가져오기
         const scrollProgress = document.getElementById('scroll-progress');
