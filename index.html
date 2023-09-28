@@ -96,6 +96,11 @@
             column-count: 3;
         }
 
+        .center-text {
+            text-align: center;
+            margin: 0 auto;
+        }
+
         /* 중앙 정렬 */
         .container {
             display: flex;
@@ -127,6 +132,7 @@
 </head>
 
 <body>
+    <!-- 배너 -->
     <div class="hero bg-dark text-center py-5" style="background-image: url('banner.png'); background-size: cover;">
         <h1 class="text-white">지:금 우:리는</h1>
         <h5 class="text-white">: 취업, 생계, 그리고 우울</h1>
@@ -149,7 +155,7 @@
                     <!-- 01번째 메인 카드 뉴스 이미지-->
                     <img src="News01-Thumbnail.png" class="card-img-top" alt="첫번째 뉴스" />
                     <div class="card-body">
-                        <h5 class="card-title">무엇이 <br>당신을 가장 힘들게 합니까?</h5>
+                        <h5 class="card-title"><strong>'무엇'</strong>이 <br>당신을 가장 힘들게 합니까?</h5>
                         <h7 class="card-subtitle mb-2 text-muted">2023.09.15</h7>
                         <br>
                     </div>
@@ -164,7 +170,7 @@
 
                         <!-- 모달 창 제목 -->
                         <div class="modal-header">
-                            <h3 class="modal-title container" id="News01">무엇이 당신을 가장 힘들게 합니까?</h3>
+                            <h3 class="modal-title center-text" id="News01"><strong>'무엇'</strong>이 당신을 가장 힘들게 합니까?</h3>
                         </div>
 
                         <!-- 모달 창 내용 -->
@@ -187,12 +193,13 @@
                     <!-- 02번째 메인 카드 뉴스 이미지-->
                     <img src="News02-Thumbnail.png" class="card-img-top" alt="두번째 뉴스" />
                     <div class="card-body">
-                        <h5 class="card-title">무엇이 <br>당신을 가장 힘들게 합니까?</h5>
+                        <h5 class="card-title"><strong>'차에 치이면 아무것도 안해도 되겠지'</strong><br>20대 어린이집 교사의 출근길</h5>
                         <h7 class="card-subtitle mb-2 text-muted">2023.09.15</h7>
                         <br>
                     </div>
                 </div>
             </div>
+
             <!-- 모달 창 시작 -->
             <div class="modal fade" id="myModal02" tabindex="-1" role="dialog" aria-labelledby="News02"
                 aria-hidden="true">
@@ -201,8 +208,10 @@
 
                         <!-- 모달 창 제목 -->
                         <div class="modal-header">
-                            <h3 class="modal-title text-center" id="News02">'차에 치이면 아무것도 안해도 되겠지' 20대
-                                어린이집 교사의 출근길</h3>
+                            <h3 class="modal-title center-text" id="News02">
+                                <strong>'차에 치이면 아무것도 안해도 되겠지'</strong><br>
+                                20대 어린이집 교사의 출근길
+                            </h3>
                         </div>
 
                         <!-- 모달 창 내용 -->
@@ -226,7 +235,10 @@
                     <!-- 03번째 메인 카드 뉴스 이미지-->
                     <img src="News03-Thumbnail.png" class="card-img-top" alt="세번째 뉴스" />
                     <div class="card-body">
-                        <h5 class="card-title">일할 땐 근로자, <br>돈 받을 땐 프리랜서</h5>
+                        <h5 class="card-title">
+                            일할 땐 <strong>'근로자'</strong>, <br>
+                            돈 받을 땐 <strong>'프리랜서'</strong>
+                        </h5>
                         <h7 class="card-subtitle mb-2 text-muted">2023.09.29</h7>
                         <br>
                     </div>
@@ -240,7 +252,10 @@
 
                         <!-- 모달 창 제목 -->
                         <div class="modal-header">
-                            <h3 class="modal-title text-center" id="News03">일할 땐 근로자, 돈 받을 땐 프리랜서</h3>
+                            <h3 class="modal-title center-text" id="News03">
+                                일할 땐 <strong>'근로자'</strong>,<br>
+                                돈 받을 땐 <strong>'프리랜서'</strong>
+                            </h3>
                         </div>
 
                         <!-- 모달 창 내용 -->
@@ -278,7 +293,7 @@
 
                         <!-- 모달 창 제목 -->
                         <div class="modal-header">
-                            <h3 class="modal-title text-center" id="News4">기사 작성 중입니다.</h3>
+                            <h3 class="modal-title center-text" id="News4">기사 작성 중입니다.</h3>
                         </div>
 
                         <!-- 모달 창 내용 -->
