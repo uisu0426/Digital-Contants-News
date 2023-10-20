@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet"
+        href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/easygpt/default.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        /* 중앙 정렬 */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        /* 오른쪽 정렬*/
+        .right-align {
+            text-align: right;
+        }
+
+        /* 기사 내용 양옆 여백 지정*/
+        .contents_margin {
+            padding-left: 10%;
+            /* 왼쪽 여백을 10%로 설정 */
+            padding-right: 10%;
+            /* 오른쪽 여백을 10%로 설정 */
+        }
+
+        /* 텍스트 불투명도 */
+        .contents_annotation {
+            opacity: 0.8;
+        }
+
+        /* 텍스트 글꼴 기울이기*/
+        .italic-text {
+            font-style: italic;
+        }
+
+        /* 게이지 바 컨테이너 스타일 */
+        #scroll-progress-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            /* 게이지 바의 높이 설정 */
+            background-color: #ccc;
+            z-index: 9999;
+            /* 다른 요소 위에 나타나도록 함 */
+        }
+
+        /* 게이지 바 스타일 */
+        #scroll-progress {
+            height: 100%;
+            width: 0;
+            background-color: #007bff;
+            /* 게이지 바 색상 설정 */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 게이지 바 컨테이너 -->
+    <div id="scroll-progress-container">
+        <!-- 게이지 바 -->
+        <div id="scroll-progress"></div>
+    </div>
+
+    <div class="contents_margin">
+        <br>
+        <!-- 기사 내용 -->
+        <p class="contents_annotation">
+            지난 3편 <'우울증은 내 인생에 있으면 안되는데' 우울에 대한 강박>에서 이어집니다.
+        </p>
+        <hr>
+
+        <p>
+            윤씨는 어린이집을 그만두고 이직 준비를 하며 본래 아르바이트 2개를 병행했었다.
+            평일에는 병원에서 업무 보조 알바를 했고, 주말에는 키즈카페 알바를 했다.
+            그렇게하니 한 달에 약 200만원 정도 벌 수 있었으나, 이직 준비를 할 수가 없었다.
+            결국 병원 업무를 그만두고 키즈카페 알바만 하며 생계를 유지하고 있으나, 자취 중인 윤씨에게 40만원 정도의 월급은 생활비로 모자랐다.
+            어린이집에 다닐때도 여러 사정으로 생활비를 아꼈던 윤씨가 유일하게 줄일 수 있었던 지출은 식비와 여가비였다.
+        </p>
+
+        <br>
+        <hr>
+        <h5><strong>이번 주말에 만날래? “다이어트 중이라 못 만나”</strong></h5>
+
+        <p>
+            자취생이라 월세와 관리비 같은 큰 지출을 무시할 수 없던 윤씨는 어린이집에서 월급을 받을 때도 생활비 아끼기에 혈안이 됐다.
+            윤씨가 가장 먼저 줄인 생활비는 여가비였다.
+            친구들에게 연락이 오면 “다이어트 중이라 못 만난다”라며 만남을 피했다.
+            친구들과 만나서 할 일이라곤 모두 돈 쓰는 일밖에 없었다.
+            물론 산책처럼 돈이 덜 들어가거나 아예 안 들어가는 활동을 하자고 하는 방법도 있겠으나, 놀자고 만나는 친구들에게 그런 사정을 설명할 수 있는 이는 많지않다.
+        </p>
+
+        <p class="italic-text">
+            “(생활비를) 하루에 거의 안 쓴 적도 많죠. 친구들도 아예 안 만나고. 친구들 만나면 돈 써야 되니까”
+        </p>
+
+        <div class="container">
+            <video style="max-width: 100%; height: auto;" controls>
+                <source src="news05-video01.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <br>
+        <hr>
+        <h5><strong>하루 지출 삼각김밥 하나 “그게 제일 싸잖아요"</strong></h5>
+
+        <p>
+            원래도 여가비에 쓰는 돈이 많은 편은 아니었다.
+            그것만 줄여서는 부족한 생활비를 감당할 수 없었기에, 윤씨는 동시에 식비를 줄이기 시작했다.
+            월세와 공과금 같은 고정비는 어차피 매달 나가야 했으니, 당장 조절할 수 있는 지출은 식비가 유일했다.
+        </p>
+
+        <p class="italic-text">
+            <strong>“그거(삼각김밥) 먹거나 아니면 점심에는 어린이집(직장)에서 밥을 먹는 게 공짜니까.
+                어린이집에서 밥 엄청 먹고 저녁 안 먹고”</strong>
+        </p>
+
+        <div class="container">
+            <video style="max-width: 100%; height: auto;" controls>
+                <source src="news05-video02.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <p>
+            아침은 건너뛰고, 점심엔 어린이집에서 아이들을 보며 급식을 먹을 수 있었다.
+            문제는 저녁이었다.
+            퇴근하고 집에 돌아와 저녁까지 거르기란 쉬운 일이 아니었다.
+            윤씨는 편의점에서 가장 저렴하게 끼니를 때울 수 있는 삼각김밥을 사오기 시작했다.
+            그것조차 여의치 않을 땐 점심 때 어린이집에서 밥을 많이 먹고 저녁을 굶었다.
+            불규칙한 식습관의 표본이었다.
+        </p>
+
+        <p>
+            농촌진흥청 국립농업과학원 연구팀이 22년 7월 수도권 거주 1인 가구 청년 500명을 대상으로 설문조사를 실시한 결과,
+            대학생 18.8%가 자신이 생각하는 식생활 관련 문제로 ‘결식’을 뽑았다.
+            연구팀은 이를 ‘직장인 8.4%와 기타(취업준비생 및 대입준비생 등) 1.6%보다 유의미하게 많았다’고 평가했다.
+            소득이 불안정한 대학생들에게서 이런 결과가 나왔다는 것은,
+            비용 때문에 식사를 포기했던 윤씨의 사례가 유별난 것이 아니란 뜻이다.
+        </p>
+
+        <div class="container">
+            <img src="news05-image01.png" style="max-width: 100%; height: auto;" />
+        </div>
+        <p class="contents_annotation">
+            ▲ 농촌진흥청 국립농업과학원 연구팀이 22년 7월 발표한 설문조사 일부
+        </p>
+
+        <p class="contents_annotation right-align">
+            윤가은씨 인터뷰 마침.
+        </p>
+
+        <br>
+        <p class="italic-text">
+            청년들에게 ‘식비’란 과연 어떤 의미일까.
+            이번 편 마지막 인터뷰를 토대로, 우리는 소득이 불안정한 청년들의 식사에 포커스를 맞춰보기로 했다.
+            다음 편 연재.
+        </p>
+
+    </div>
+
+    <!-- JavaScript 파일 연결 -->
+    <script>
+
+        // 게이지 바 요소 가져오기
+        const scrollProgress = document.getElementById('scroll-progress');
+
+        // 스크롤 이벤트를 감지하여 게이지 업데이트
+        window.addEventListener('scroll', () => {
+            const windowHeight = window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight - windowHeight;
+            const scrollTop = window.scrollY;
+            const scrollPercentage = (scrollTop / documentHeight) * 100;
+            scrollProgress.style.width = scrollPercentage + '%';
+        });
+
+    </script>
+
+</body>
+
+</html>
